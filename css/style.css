@@ -1,0 +1,309 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Roboto";
+	font-size: 16px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 50px;
+}
+/* ------------------------------ */
+h1 {
+	color: #5d76cb;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 900;
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+.block1 {
+	color: #adff2f;
+	background-color: #8a6642;
+	padding: 10px;
+	margin: 0px 0px 60px 0px;
+}
+.block1 p:first-child {
+	color: #4b0082;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+.btn {
+	color: #fafafa;
+	line-height: 22px;
+	padding: 13px 50px 19px;
+	display: inline-block;
+	background: #d23166;
+	border-radius: 5px;
+	margin: 0px 0px 40px 0px;
+}
+.btn:hover {
+	color: #c0a6a6;
+	background: #9e1f4a;
+}
+.btn:active {
+	color: #ffffff;
+	background: #ff4482;
+}
+.btn:focus {
+	color: #adff2f;
+	outline: none;
+}
+.info {
+	background-color: #f19cbb;
+	margin: 0px 0px 60px 0px;
+	padding: 20px;
+}
+.info p:first-of-type {
+	background: url("../img/fire.jpg") 50% / cover no-repeat;
+	text-align: center;
+	font-size: 30px;
+}
+.info *:last-child {
+	letter-spacing: 4px;
+	font-weight: 700;
+	background: url("../img/fire.jpg") 50% / cover no-repeat;
+	border-radius: 23% 77% 20% 80% / 35% 41% 59% 65%;
+	overflow: hidden;
+}
+.info h2 {
+	color: #34c759;
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0px 0px 40px 0px;
+}
+.info h2::after {
+	content: "";
+	display: block;
+	height: 2px;
+	background-color: crimson;
+	margin: 10px 0px 0px 0px;
+}
+.text {
+	color: #fff;
+	max-width: 350px;
+	text-align: justify;
+	border: 5px dashed #5d76cb;
+	background: url("../img/bg.jpg") 50% / cover no-repeat;
+	padding: 30px;
+}
+.text:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.text:target {
+	opacity: 0.3;
+}
+.text:not(:nth-child(2))::first-letter {
+	color: Red;
+	font-size: 50px;
+}
+.info p:first-of-type:first-line {
+	text-transform: uppercase;
+	color: blueviolet;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+.link {
+	display: inline-block;
+	color: #ed760e;
+	font-size: 20px;
+	line-height: 28px;
+	vertical-align: top;
+	margin: 0px 0px 10px 0px;
+}
+.link:hover::after,
+.link:hover::before {
+	content: url(../img/mark.png);
+}
+.link:hover {
+	text-decoration: underline;
+	color: #01796f;
+}
+.img {
+	border-radius: 50% 50% 100% 0% / 100% 59% 41% 0%;
+	box-shadow: 64px 49px 26px 1px rgba(201, 40, 229, 0.6);
+	margin: 0px 0px 30px 40px;
+}
+.list li {
+	color: #ca2c92;
+	margin: 0px 0px 10px 0px;
+}
+.list li:nth-child(odd) {
+	color: blue;
+}
+.list li:nth-child(odd)::before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	vertical-align: top;
+	margin: 5px 10px 0px 0px;
+	border-radius: 50%;
+	background-color: indigo;
+}
+.list li:nth-child(even) {
+	color: green;
+}
+.list li:nth-child(even):not(:last-child)::after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	vertical-align: top;
+	margin: 2px 0px 0px 10px;
+	border-radius: 12% 88% 46% 54% / 10% 36% 64% 90%;
+	background-color: #7b3f00;
+}
+.list li:last-child::after {
+	content: url(../img/insta.png);
+	margin: 0px 0px 0px 25px;
+}
+.sed {
+	background-color: #f5f5f5;
+	padding: 50px;
+	margin: 0px 0px 50px 0px;
+}
+.sed__container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.sed__subtitle {
+	color: #5d62b5;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 35px;
+	background: url("../img/mark.png") 0 -2px no-repeat;
+	margin: 0px 0px 33px 0px;
+}
+.sed__title {
+	color: #000;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	margin: 0px 0px 68px 0px;
+}
+.sed__items {
+	font-size: 0;
+}
+.sed__item {
+	display: inline-block;
+	max-width: 324px;
+}
+.sed__item:not(:last-child) {
+	margin: 0px 24px 0px 0px;
+}
+.sed__item-love .item__image {
+	background: url("../img/dog_love.png") 0 0 no-repeat;
+}
+.sed__item-vet {
+	background: url("../img/dog_vet.png") 0 0 no-repeat;
+}
+.sed__item-stream {
+	background: url("../img/dog_stream.png") 0 0 no-repeat;
+}
+
+.item__image {
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	margin: 0px 23px 0px 0px;
+	vertical-align: top;
+}
+
+.item__block {
+	display: inline-block;
+	max-width: 235px;
+}
+.item__title {
+	color: #f2726f;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+}
+.item__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+}
+
+.choose {
+	max-width: 255px;
+	background-color: #252525;
+	font-family: "Helvetica Neue";
+	padding: 24px 24px 60px;
+}
+.choose__title {
+	color: #fff;
+	font-size: 22px;
+	line-height: 26px;
+	margin: 0px 0px 36px 0px;
+}
+.choose__title::after {
+	content: "";
+	display: block;
+	width: 56px;
+	height: 2px;
+	background-color: #34c759;
+	margin: 23px 0px 0px 0px;
+}
+.choose__text {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	line-height: 18px;
+}
